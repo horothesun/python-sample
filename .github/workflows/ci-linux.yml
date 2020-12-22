@@ -31,7 +31,8 @@ jobs:
     - name: Install dependencies
       run: |
         conda info
-        conda env update --file environment.yml --name base
+        conda env list
+        conda env update --file environment.yml --name user
 
     - uses: actions/checkout@v2
 
