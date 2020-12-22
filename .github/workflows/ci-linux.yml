@@ -36,6 +36,7 @@ jobs:
       run: |
         conda info
         conda env list
+        conda env export
 
     - name: Test
       run: |
