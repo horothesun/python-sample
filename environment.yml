@@ -1,11 +1,12 @@
 name: python-sample
 
 channels:
-- conda-forge
 - defaults
+# - bioconda
+- conda-forge
 
 dependencies:
 - python=3.7
 - pytest
-- numpy
-- pandas
+# - numpy
+# - pandas
