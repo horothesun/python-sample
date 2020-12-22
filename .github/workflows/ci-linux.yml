@@ -32,11 +32,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        echo "GITHUB_PATH=$GITHUB_PATH"
-        cat environment.yml
-        conda info
-        conda env list
-        conda env update --file environment.yml
+        conda env update --file environment.yml --name base
 
     - name: Build
       run: |
