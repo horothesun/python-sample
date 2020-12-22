@@ -18,18 +18,18 @@ jobs:
       with:
         access_token: ${{ github.token }}
 
-    - name: Inspect WIP
-      run: |
-        echo "GITHUB_PATH=$GITHUB_PATH"
-        cat environment.yml
     - name: Set up Python 3.7
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
+
+    - uses: actions/checkout@v2
+
 #    - name: Add conda to system path
 #      run: |
 #        # $CONDA is an environment variable pointing to the root of the miniconda directory
 #        echo $CONDA/bin >> $GITHUB_PATH
+
     - name: Install dependencies
       run: |
         echo "GITHUB_PATH=$GITHUB_PATH"
@@ -37,8 +37,6 @@ jobs:
         conda info
         conda env list
         conda env update --file environment.yml
-
-    - uses: actions/checkout@v2
 
     - name: Build
       run: |
