@@ -31,7 +31,7 @@ jobs:
       with:
         activate-environment: python-sample-env
         channel-priority: strict
-        condarc-file: condarc.yml
+        # condarc-file: condarc.yml
         environment-file: environment.yml
 
     - name: Conda info
