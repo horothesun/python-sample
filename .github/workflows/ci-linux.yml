@@ -31,10 +31,12 @@ jobs:
       with:
         activate-environment: python-sample
         environment-file: environment.yml
+
+    - name: Conda info
       run: |
         conda info
         conda env list
 
     - name: Test
       run: |
-        pytest
+        pytest -v
