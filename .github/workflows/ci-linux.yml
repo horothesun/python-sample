@@ -30,6 +30,7 @@ jobs:
 #        echo "GITHUB_PATH=$GITHUB_PATH"
     - name: Install dependencies
       run: |
+        echo "PWD=$(pwd)"
         conda info
         conda env list
         conda env update --file environment.yml
