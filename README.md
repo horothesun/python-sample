@@ -9,13 +9,13 @@
 
 ## Environment setup
 
-```shell
+```bash
 conda env update --file environment.yml
 conda activate python-sample
 ```
 
 ## Test
 
-```shell
+```bash
 pytest -v
 ```
