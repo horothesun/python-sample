@@ -11,7 +11,7 @@
 
 ```bash
 conda env update --file environment.yml
-conda activate python-sample
+conda activate python-sample-env
 ```
 
 ## Test
