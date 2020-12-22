@@ -32,7 +32,7 @@ jobs:
       run: |
         conda info
         conda env list
-        conda env update --file environment.yml --name user
+        conda env update --file environment.yml
 
     - uses: actions/checkout@v2
 
